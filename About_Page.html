@@ -1,22 +1,98 @@
 <html>
 
    <head>
-     <style>
-	body {
- 	background-image: url('7.jpg');
- 	background-repeat: no-repeat;
-  	background-attachment: fixed; 
-  	background-size: 100% 100%;
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+		.collapsible {
+		  background-color:green;
+		  color: white;
+ 		  cursor: pointer;
+		  padding: 18px;
+		  width: 50%;
+		  border: none;
+  		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		  margin-left:800px;
+		  margin-top:75px;
+		}
+
+		.active, .collapsible:hover {
+		  background-color:black;
+		}
+
+		.content {
+		  padding:  18px;
+		  width: 50%;
+		  color:white;
+		  display: none;
+		  margin-left:800px;
+		  overflow: hidden;
+		  background-color:teal;
+		}
+
+		body {
+	 	background-image: url('7.jpg');
+	 	background-repeat: no-repeat;
+	  	background-attachment: fixed; 
+	  	background-size: 100% 100%;
+		}
+
+		.header {
+ 		 position:header;
+		 text-align: center;   
+	         font-size:30px;
+		}
+
+
 	}
-	h1 {text-align: center;}
+
+
      </style>
 
    </head>
 
-    <body>
+     <body>
 
-	 <h1 style="font-size:60px;">About</h1>
-		
-    </body>
+	<div class="header">
+	  <h1>About</h1>
+	</div>
+
+
+	<button type="button" class="collapsible"> who we are </button>
+	<div class="content">
+	<p>more about who we are </p>
+	</div>
+	<button type="button" class="collapsible">what we do</button>
+	<div class="content">
+	<p>More about what we do </p>
+        </div>
+        <button type="button" class="collapsible">why trees</button>
+        <div class="content">
+        <p>More about why trees</p>
+	</div>
+
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+	        coll[i].addEventListener("click", function() {
+  	        this.classList.toggle("active");
+  	        var content = this.nextElementSibling;
+ 	        if (content.style.display === "block") {
+  	       content.style.display = "none";
+  	       } 
+		else {
+ 		     content.style.display = "block";
+ 		   }
+		  });
+		}
+	    </script>
+
+
+   </body>
 
 </html>
