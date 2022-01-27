@@ -30,9 +30,9 @@ ul{
 }
 
 .logo img{
-    margin-left: 30px;
+    margin-left: 100px;
     height: 150px;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .menu {
@@ -59,3 +59,117 @@ ul{
     margin-right: 100px;
 }
 
+.banner{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 150px;
+    color: #fff;
+}
+
+.app-text{
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+}
+
+.app-text h3{
+    margin-top: 100px;
+    font-size: 17px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.app-text h1{
+    font-size: 51px;
+    position: relative;
+    color: #000;
+    margin-top: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.app-text p{
+    font-size: 19px;
+    margin: 30px 30px 30px 0;
+    letter-spacing: 1px;
+    color: #000;
+    padding-right: 250px;
+}
+
+.btn-group{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.btn-group .signup-btn{
+    cursor: pointer;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 32px;
+    background-color: #2cdb52;
+    padding: 15px 50px;
+}
+
+.btn-group .play-btn{
+    margin-left: 40px;
+    display: inline-flex;
+}
+
+.btn-group span{
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+.play-btn-inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: rgb(50, 130, 204);
+}
+
+.play-btn-inner i{
+    padding: 15px 19px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.app-picture img{
+    height: 330px;
+    margin-top: 120px;
+    color-interpolation-filters: linearRGB;
+}
+
+.social-icons{
+    position: fixed;
+    right: 30px;
+    top: 30%;
+}
+
+.social-icons ul li{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.social-icons ul li a{
+    color: #000;
+    padding: 10px;
+    display: block;
+    font-size: 29px;
+}
+
+.social-icons ul li a:hover{
+    background-color: #2ac458;
+    color: #fff;
+}
