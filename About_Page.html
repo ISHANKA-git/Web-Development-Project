@@ -1,1 +1,157 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+ background-image :url("b.jpg");
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>........................more</p>
+  <p>............extra</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+    <center>  <img src="3.jfif" alt="Ishanka" style="width:50%"></center>
+      <div class="container">
+        <h2>Ishanka</h2>
+        <p class="title">cleaning head</p>
+        <p>aba kadanawa pol kadanawa</p>
+        <p>ishanka@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <center> <img src="2.jfif" alt="Nawani" style="width:50%"></center>
+      <div class="container">
+        <h2>Nawani</h2>
+        <p class="title">cleaning supporter</p>
+        <p>aba kadanawa pol kadanawa</p>
+        <p>Nawani@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+    <center>  <img src="1.jfif" alt="Wimarshani" style="width:50%"></center>
+      <div class="container">
+        <h2>Wimarshani</h2>
+        <p class="title">cleaning supporter</p>
+        <p>aba kadanawa pol kadanawa</p>
+        <p>Wimarshani@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="column">
+    <div class="card">
+     <center> <img src="5.jfif" alt="Ishadi" style="width:50%"></center>
+      <div class="container">
+        <h2>Ishadi</h2>
+        <p class="title">cleaning supporter</p>
+        <p>aba kadanawa pol kadanawa</p>
+        <p>Ishadi@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+    <center>  <img src="4.jfif" alt="Shashan" style="width:50%"></center>
+      <div class="container">
+        <h2>Shashan</h2>
+        <p class="title">cleaning supporter</p>
+        <p>aba kadanawa pol kadanawa</p>
+        <p>Shashan@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
