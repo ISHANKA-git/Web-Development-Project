@@ -1,157 +1,174 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+ .section-title h2 {
+  text-transform: uppercase;
+}
+.section-title {
+  margin: 3% 0;
+}
+.section-title p {
+  text-transform: uppercase;
+  font-weight:bold;
+}
+.single-team{
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow:5px 5px 15px #000;
 }
 
-html {
-  box-sizing: border-box;
+.team-img{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
 }
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
- background-image :url("b.jpg");
-  color: white;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
+.team-img img{
   width: 100%;
+  transition: .3s;
+}
+.single-team:hover .team-img img {
+  transform: scale(1.1);
+}
+.team-content {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  transition: all .4s;
+  background: tomato;
+  z-index:5;
+}
+.single-team:hover .team-content{
+  height: 150px;
+}
+.team-info {
+  padding: 5px 20px 5px 20px;
+  transition: all .5s;
+}
+.single-team:hover .team-content{
+  background: #000;
+}
+.single-team .team-content .team-info h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
+}
+.single-team:hover .team-info h3{
+  color: tomato;
+}
+.team-info p {
+  margin-top: 15px;
+  color: #fff;
+}
+.single-team-text p{
+  margin-top: 5px;
+}
+.team-text {
+  color: #fff;
+  padding: 0 10px 5px;
 }
 
-.button:hover {
-  background-color: #555;
-}
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
+
+
+
+
+
 </style>
 </head>
 <body>
 
-<div class="about-section">
-  <h1>About Us Page</h1>
-  <p>........................more</p>
-  <p>............extra</p>
+
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <img src="1.jfif" alt="ishanka's pic" class="img-responsive">
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>Ishanka</h3>
+              <p>Web Developer</p>
+            </div>
+            <p class="team-text">more..............................................</p>
+          </div>
+        </div>
+      </div>
+
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <img src="2.jfif" alt="Nawani's pic" class="img-responsive">
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>Nawani</h3>
+              <p>Web Developer</p>
+            </div>
+            <p class="team-text">more  about nawani..................................</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <img src="3.jfif" alt="wimarshani's pic" class="img-responsive">
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>Wimarshani</h3>
+              <p>Web Developer</p>
+            </div>
+            <p class="team-text">more about wimarshani........</p>
+          </div>
+        </div>
+      </div>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <img src="4.jfif" alt="ishadi's pic" class="img-responsive">
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>Ishadi</h3>
+              <p>Web Developer</p>
+            </div>
+            <p class="team-text">more about ishadi...................</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-    <center>  <img src="3.jfif" alt="Ishanka" style="width:50%"></center>
-      <div class="container">
-        <h2>Ishanka</h2>
-        <p class="title">cleaning head</p>
-        <p>aba kadanawa pol kadanawa</p>
-        <p>ishanka@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+      <!--== Single Team Item ==-->
+      <div class="col-md-3">
+        <div class="single-team">
+          <div class="team-img">
+            <img src="m.jpg" alt="shashan's pic" class="img-responsive">
+          </div>
+          <div class="team-content">
+            <div class="team-info">
+              <h3>Shashan</h3>
+              <p>Web Developer</p>
+            </div>
+            <p class="team-text">more about shashan................</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-     <center> <img src="2.jfif" alt="Nawani" style="width:50%"></center>
-      <div class="container">
-        <h2>Nawani</h2>
-        <p class="title">cleaning supporter</p>
-        <p>aba kadanawa pol kadanawa</p>
-        <p>Nawani@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-    <center>  <img src="1.jfif" alt="Wimarshani" style="width:50%"></center>
-      <div class="container">
-        <h2>Wimarshani</h2>
-        <p class="title">cleaning supporter</p>
-        <p>aba kadanawa pol kadanawa</p>
-        <p>Wimarshani@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-  <div class="column">
-    <div class="card">
-     <center> <img src="5.jfif" alt="Ishadi" style="width:50%"></center>
-      <div class="container">
-        <h2>Ishadi</h2>
-        <p class="title">cleaning supporter</p>
-        <p>aba kadanawa pol kadanawa</p>
-        <p>Ishadi@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="column">
-    <div class="card">
-    <center>  <img src="4.jfif" alt="Shashan" style="width:50%"></center>
-      <div class="container">
-        <h2>Shashan</h2>
-        <p class="title">cleaning supporter</p>
-        <p>aba kadanawa pol kadanawa</p>
-        <p>Shashan@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>
