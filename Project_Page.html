@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/Project_Page.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="assets/image/logo.jpg">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">account_circle</span>
+                    <h3>Profile</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">park</span>
+                    <h3>Planting Trees</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">paid</span>
+                    <h3>Donate</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">leaderboard</span>
+                    <h3>leaderboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">local_police</span>
+                    <h3>Get My Badge</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+
+            </div>
+        </aside>
+        <!-------------------------------End of aside-------------------------->
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">local_florist</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Plantings</h3>
+                            <h1>13</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--End of Total Plantings-->
+                <div class="badge">
+                    <span class="material-icons-sharp">local_police</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>To Next Badge</h3>
+                            <h1>13</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>60%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--End of To Next Badge-->
+                <div class="expenses">
+                    <span class="material-icons-sharp">energy_savings_leaf</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>To Become Greeny Champion</h3>
+                            <h1>87</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>13%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                <!--End of To Become Greeny Champion -->
+            </div>
+            <!----------End of INSIGHTS------------>
+
+            <div class="recent-plantings">
+                <h2>Recent Plantings</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member Name</th>
+                            <th>Position</th>
+                            <th>No of Plantings</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Wimarshani</td>
+                            <td>Greeny Challenger I</td>
+                            <td>2</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Shashan</td>
+                            <td>Greeny Challenger II</td>
+                            <td>1</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Nawani</td>
+                            <td>Greeny Challenger I</td>
+                            <td>3</td>
+                            <td class="Success">Success</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Ishadi</td>
+                            <td>Greeny Challenger III</td>
+                            <td>2</td>
+                            <td class="Success">Success</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Vijan</td>
+                            <td>Greeny Master I</td>
+                            <td>4</td>
+                            <td class="Success">Success</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Ishanka</td>
+                            <td>Greeny Challenger I</td>
+                            <td>1</td>
+                            <td class="Success">Success</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Brenda</td>
+                            <td>Greeny Challenger II</td>
+                            <td>2</td>
+                            <td class="danger">Declined</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!----------------------END OF MAIN------------------------>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toogler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Ishanka</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="assets/image/profile.png">
+                    </div>
+                </div>
+            </div>
+            <!-------------------End of Top-------------------------->
+            <div class="recent-donations">
+                <h2>Recent Donations</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="assets/image/profile1.png">
+                        </div>
+                        <div class="massage">
+                            <p><b>Oliver Stone</b> donated $25</p>
+                            <small class="text-muted">1 Day Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="assets/image/profile2.png">
+                        </div>
+                        <div class="massage">
+                            <p><b>William Zed</b> donated $10</p>
+                            <small class="text-muted">5 Days Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="assets/image/profile3.png">
+                        </div>
+                        <div class="massage">
+                            <p><b>Emma Gren</b> donated $50</p>
+                            <small class="text-muted">1 Week Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/project.js"></script>
+
+</body>
+
+</html>
