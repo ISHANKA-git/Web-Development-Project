@@ -1,105 +1,72 @@
+<!DOCTYPE html>
 <html>
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
-
-@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
-@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
-@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
- .section-title h2 {
-  text-transform: uppercase;
-}
-.section-title {
-  margin: 3% 0;
-}
-.section-title p {
-  text-transform: uppercase;
-  font-weight:bold;
-}
-.single-team{
-  padding-bottom: 70px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  box-shadow:5px 5px 15px #000;
-}
-
-.team-img{
-  position: relative;
-  z-index: 5;
-  overflow: hidden;
-}
-.team-img img{
-  width: 100%;
-  transition: .3s;
-}
-.single-team:hover .team-img img {
-  transform: scale(1.1);
-}
-.team-content {
-  height: 80px;
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  overflow: hidden;
-  bottom: 0;
-  transition: all .4s;
-  background: tomato;
-  z-index:5;
-}
-.single-team:hover .team-content{
-  height: 150px;
-}
-.team-info {
-  padding: 5px 20px 5px 20px;
-  transition: all .5s;
-}
-.single-team:hover .team-content{
-  background: #000;
-}
-.single-team .team-content .team-info h3 {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 16px;
-  margin: 5px;
-}
-.single-team:hover .team-info h3{
-  color: tomato;
-}
-.team-info p {
-  margin-top: 15px;
-  color: #fff;
-}
-.single-team-text p{
-  margin-top: 5px;
-}
-.team-text {
-  color: #fff;
-  padding: 0 10px 5px;
-}
-
-
-
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+height:600px;
+width:400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-img: "b.jpg";
+  color: white;
   background-image: url('b.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size:1800px 300px;
-
-
 }
 
-div.main {
-
-  top: 180px;
-  right: 400px	;
-  width: 200px;
-  height: 100px;
-
-
+.container {
+  padding: 0 16px;
 }
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.img-sise{
+height:400px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+
+
 
 
 
@@ -108,85 +75,76 @@ div.main {
 </head>
 <body>
 
+<div class="about-section">
+  <h1>Who we are</h1>
+  <p>We are the concept of future. </p>
+  <p>....................................................</p>
+</div>
 
-      <!--== Single Team Item ==-->
-      <div class="col-md-3">
-        <div class="single-team">
-          <div class="team-img">
-            <img src="1.jfif" alt="ishanka's pic" class="img-responsive">
-          </div>
-          <div class="team-content">
-            <div class="team-info">
-              <h3>Ishanka</h3>
-              <p>Web Developer</p>
-            </div>
-            <p class="team-text">more..............................................</p>
-          </div>
-        </div>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img  class="img-sise" src="4.jpg	" alt="ISHANKA" style="width:100%"  >
+      <div class="container">
+        <h2>ISHANKA</h2>
+        <p class="title"> Founder</p>
+         <p class="team-text">more about ISHANKA...................</p>
       </div>
+    </div>
+  </div>
 
-      <!--== Single Team Item ==-->
-      <div class="col-md-3">
-        <div class="single-team">
-          <div class="team-img">
-            <img src="2.jfif" alt="Nawani's pic" class="img-responsive">
-          </div>
-          <div class="team-content">
-            <div class="team-info">
-              <h3>Nawani</h3>
-              <p>Web Developer</p>
-            </div>
-            <p class="team-text">more  about nawani..................................</p>
-          </div>
-        </div>
+  <div class="column">
+    <div class="card">
+      <img class="img-sise" src="3.jpg" alt="NAWANI" style="width:100%">
+      <div class="container">
+        <h2>NAWANI</h2>
+        <p class="title"> Director</p>
+          <p class="team-text">more about NAWANI...................</p>
       </div>
-      <!--== Single Team Item ==-->
-      <div class="col-md-3">
-        <div class="single-team">
-          <div class="team-img">
-            <img src="3.jfif" alt="wimarshani's pic" class="img-responsive">
-          </div>
-          <div class="team-content">
-            <div class="team-info">
-              <h3>Wimarshani</h3>
-              <p>Web Developer</p>
-            </div>
-            <p class="team-text">more about wimarshani........</p>
-          </div>
-        </div>
-      </div>
-      <!--== Single Team Item ==-->
-      <div class="col-md-3">
-        <div class="single-team">
-          <div class="team-img">
-            <img src="4.jfif" alt="ishadi's pic" class="img-responsive">
-          </div>
-          <div class="team-content">
-            <div class="team-info">
-              <h3>Ishadi</h3>
-              <p>Web Developer</p>
-            </div>
-            <p class="team-text">more about ishadi...................</p>
-          </div>
-        </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img class="img-sise" src="2.jpg" alt="WIMARSHANI" style="width:100%">
+      <div class="container">
+        <h2>WIMARSHANI</h2>
+        <p class="title">Designer</p>
+       <p class="team-text">more about WIMARSHANI...................</p>
       </div>
     </div>
   </div>
 </div>
-      <!--== Single Team Item ==-->
-      <div class="col-md-3">
-        <div class="single-team">
-          <div class="team-img">
-            <img src="m.jpg" alt="shashan's pic" class="img-responsive">
-          </div>
-          <div class="team-content">
-            <div class="team-info">
-              <h3>Shashan</h3>
-              <p>Web Developer</p>
-            </div>
-            <p class="team-text">more about shashan................</p>
-          </div>
-        </div>
+  <div class="column">
+    <div class="card">
+      <img class="img-sise" src="1.jpg" alt="ISHADI" style="width:100%">
+      <div class="container">
+        <h2>ISHADI</h2>
+        <p class="title">Designer</p>
+          <p class="team-text">more about ISHADI...................</p>
+      
       </div>
+    </div>
+  </div>
+</div>
+  <div class="column">
+    <div class="card">
+      <img class="img-sise" src="m.jpg" alt="SHASHAN" style="width:100%" height=400px width=150px>
+		<div class="team-content">
+            <div class="team-info">
+      <div class="container">
+        <h2>SHASHAN</h2>
+        <p class="title">Designer</p>
+        <p class="team-text">more about SHASHAN...................</p>
+        
+ </div>
+  </div>
+   
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
+
