@@ -2,7 +2,19 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -27,6 +39,7 @@ height:600px;
 width:400px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+margin-left:80px;	
 }
 
 .about-section {
@@ -63,8 +76,20 @@ height:400px;
   }
 }
 
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
 
-
+.button:hover {
+  background-color: #555;
 
 
 
@@ -79,17 +104,20 @@ height:400px;
   <h1>Who we are</h1>
   <p>We are the concept of future. </p>
   <p>....................................................</p>
+ 
 </div>
 
-<h2 style="text-align:center">Our Team</h2>
+<h1 style="color:green "><center>Our Team</center></h1>
 <div class="row">
   <div class="column">
     <div class="card">
-      <img  class="img-sise" src="4.jpg	" alt="ISHANKA" style="width:100%"  >
+      <img  class="img-sise" src="2.jpeg	" alt="ISHANKA" style="width:100%"  >
       <div class="container">
         <h2>ISHANKA</h2>
         <p class="title"> Founder</p>
          <p class="team-text">more about ISHANKA...................</p>
+ <p><button class="button">Contact
+  </button></p>
       </div>
     </div>
   </div>
@@ -101,6 +129,7 @@ height:400px;
         <h2>NAWANI</h2>
         <p class="title"> Director</p>
           <p class="team-text">more about NAWANI...................</p>
+ <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -112,6 +141,7 @@ height:400px;
         <h2>WIMARSHANI</h2>
         <p class="title">Designer</p>
        <p class="team-text">more about WIMARSHANI...................</p>
+ <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -123,6 +153,7 @@ height:400px;
         <h2>ISHADI</h2>
         <p class="title">Designer</p>
           <p class="team-text">more about ISHADI...................</p>
+ <p><button class="button">Contact</button></p>
       
       </div>
     </div>
@@ -137,6 +168,7 @@ height:400px;
         <h2>SHASHAN</h2>
         <p class="title">Designer</p>
         <p class="team-text">more about SHASHAN...................</p>
+ <p><button class="button">Contact</button></p>
         
  </div>
   </div>
@@ -145,6 +177,11 @@ height:400px;
   </div>
 </div>
 
+
+<div class="footer">
+  <p>We are the concept of future.</p>
+</div>
+
+
 </body>
 </html>
-
