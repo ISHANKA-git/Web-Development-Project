@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+
+
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+    <meta charset="utf-8">
+
+    <meta name="viewport" content= "width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
 <style>
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -92,12 +92,121 @@ height:400px;
   background-color: #555;
 
 
+}
+
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.container{
+max-width:1170px;
+
+margin:auto;
+}
+.row{
+display:flex;
+flex-wrap:wrap;
+}
+body{
+Line-height:1.5;
+font-family:sans-serif;
+}
+
+ul{
+list-style:none;
+}
+
+
+.footer{
+margin-top:700px;
+background-color:black;
+padding:10px 0;
+}
+.footer-col{
+width:25%;
+padding:0 15px;
+}
+.footer-col h4{
+font-size: 18px;
+color:black;
+text-transform:capitalize;
+margin-bottom: 30px;
+font-weight:500;
+position:relative;
+background-color:white;
+
+
+}
+.footer-col h4::before{
+content:'';
+position:absolute;
+Left:0;
+bottom: -10px;
+background-color:red;
+height:2px;
+box-sizing:border-box;
+width:50px;
+}
+
+.footer-col ul li a{
+margin-botom:10px;
+}
+.footer-col ul li a{
+font-size:16px;
+text-transform:capitalize;
+color:blue;
+text-decoration:none;
+font-weight:300;
+display:block;
+transition:all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+color:#ffffff;
+padding-left: 5px;
+}
+.footer-col .social-links a{
+display:inline-block;
+height:40px;
+width:40px;
+background-color:reba(255,255,255,0.2);
+margin:0 10px 10px 0;
+text-align:center;
+Line-height: 40px;
+border-radius:50%color:white;
+transition:all 0.5s ease;
+
+}
+.footer-col .social-links a:hover{
+color:#24262b;
+background-color:#ffffff;
+}
+
+@media(max-width:767px){
+.footer-col{
+width:50%;
+margin-bottom:30px;
+}
+
+@media(max-width:574px){
+.footer-col{
+width:100%;
+
+}
 
 
 
 
 </style>
+
+
+
 </head>
+
+
 <body>
 
 <div class="about-section">
@@ -152,7 +261,7 @@ height:400px;
       <div class="container">
         <h2>ISHADI</h2>
         <p class="title">Designer</p>
-          <p class="team-text">more about ISHADI...................</p>
+          <p class="team-text">more about ISHADI..................</p>
  <p><button class="button">Contact</button></p>
       
       </div>
@@ -178,10 +287,68 @@ height:400px;
 </div>
 
 
-<div class="footer">
-  <p>We are the concept of future.</p>
-</div>
+    <footer class="footer">
+        <div class="container">
+             <div class="row">
+                 <div class="footer-col">
+                     <h4>get help</h4>
+                     <ul>
+                         <li><a href="#">about us </a></li>
+                          <li><a href="#">our projechts</a></li>
+                           <li><a href="#">analisis</a></li>
+                            <li><a href="#">rates</a></li>
+                     </ul>
+                 </div>
+                    <div class="footer-col">
+                     <h4>onlinve</h4>
+                     <ul>
+                   <li><a href="#">about us </a></li>
+                          <li><a href="#">our projechts</a></li>
+                           <li><a href="#">analisis</a></li>
+                            <li><a href="#">rates</a></li>
+                     </ul>
+                 </div>
+                    <div class="footer-col">
+                     <h4>follow us </h4>
+                     <ul>
+                           <li><a href="#">about us </a></li>
+                          <li><a href="#">our projechts</a></li>
+                           <li><a href="#">analisis</a></li>
+                            <li><a href="#">rates</a></li>
+                     </ul>
+
+                 </div>
+                    <div class="footer-col">
+                     <h4>follow us </h4>
+                     <div class="social-links">
+                     <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <li><a href="#"><i class="fab fa-twitter-f"></i></a>
+                        <li><a href="#"><i class="fab fa-instergram-f"></i></a>
+                        <li><a href="#"><i class="fab fa-linkedin-f"></i></a>
+
+                     </ul>
+                                      </div>
+                 </div>
+                </div>
+             </div>
+        </footer>
+
+
 
 
 </body>
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
